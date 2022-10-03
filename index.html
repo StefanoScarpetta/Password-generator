@@ -9,9 +9,28 @@
             <p>Never use an insecure password again.</p>
             <button id="generate">Generate passwords</button>
             <div class="pswContainer">
-                <button id="psw1" onclick="click()"></button>
-                <button id="psw2" onclick="click()"></button>
+                <button id="psw1"></button><br>
+                <button id="psw2"></button>
             </div>
+            <p id="copied"></p>
+            <div class="options">
+                <h2>Choose your options:</h2>
+                <p style="margin-bottom:-10px">Lenght:</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                <output for="myRange" id="amount" name="amount">50</output><br>
+                <input type="checkbox" id="AZ" name="AZ" value="AZ" onclick="AZCheck()">
+                <label for="AZ">A - Z </label><br>
+                <input type="checkbox" id="az" name="az" value="az" onclick="azCheck()">
+                <label for="az">a - z </label><br>
+                <input type="checkbox" id="09" name="09" value="09" onclick="_09Check()">
+                <label for="09">0 - 9 </label><br>
+                <input type="checkbox" id="special" name="special" value="special" onclick="SpecialCheck()">
+                <label for="special">Caratteri speciali </label><br>
+                <label style="font-size:20px; display: none;" id="descrizione"> Per aggiungere un carattere digitalo poi premi Add: </label><br>
+                <input type="text" id="char" name="char" style="display: none">
+                <button id="add" style="display: none">Add</button>
+            </div>
+            <button id="reset" style="margin-top: 20px;">Reset</button>
         </div>
         <script src="index.js"></script>
     </body>

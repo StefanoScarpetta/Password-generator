@@ -9,7 +9,7 @@ body {
 }
 .container {
     border: 2px solid white;
-    border-radius: 15%;
+    border-radius: 5%;
     padding: 20px;
     background-color: rgb(58, 58, 58);
     color: white;
@@ -19,7 +19,7 @@ body {
 .pswContainer {
     padding: 20px;
 }
-#generate {
+#generate, #reset {
     padding: 15px;
     background-color: lightgreen;
     border: none;
@@ -43,7 +43,7 @@ h1 {
 }
 p {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     font-size: 20px;
 }
 .rp {
@@ -60,4 +60,41 @@ p {
 }
 #generate:active {
     background-color: rgb(92, 192, 92);
+}
+
+#copied {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+form {
+    text-align: center;
+    font-size: 25px;
+}
+input, label {
+    padding: 15px;
+    margin: 15px;
+    font-size: 25px;
+}
+h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.options {
+    border: 1px solid lightgreen;
+    border-radius: 5%;
+
+}
+input, output {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+}
+#add {
+    padding: 10px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 7%;
+    font-size: 15px;
+    color: white;
 }
