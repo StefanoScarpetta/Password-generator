@@ -100,6 +100,10 @@ function password(psw) {
     let gen = []
     for(i=0; i<myRange.value; i++) {
         gen[i] = randomChar()
+        if(gen[i] == null) {
+            psw.textContent = "Seleziona un gruppo di caratteri"
+            break
+        }
         psw.textContent += gen[i]
     }
 }
